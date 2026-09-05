@@ -1,0 +1,8 @@
+[project]
+name = "seem-sunder-bridge"
+version = "0.1.0"
+description = "Claim-capped SEEM/sunder/clean-room interop contract. No runtime agent claim."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
