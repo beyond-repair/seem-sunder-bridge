@@ -1,0 +1,110 @@
+{
+  "project": "seem-sunder-bridge",
+  "kind": "symbol_witness",
+  "observed_at": "2026-10-01",
+  "method": "default-branch directory listing plus raw-text def/class search",
+  "claim": "Path presence and exact def-name presence are different states. Shared op strings are not an isomorphism.",
+  "runtime_import": false,
+  "rows": [
+    {
+      "repo": "sunder",
+      "path": "sunder/vsa.py",
+      "path_present": true,
+      "blob_sha": "584190696218d2ccf3146c4ecfd427f92a060980",
+      "claimed_ops": ["bind", "unbind", "similarity", "register", "query"],
+      "exact_def_present": ["bind", "unbind", "similarity", "register", "query"],
+      "exact_def_absent": [],
+      "nearest_symbols": ["VSAMemory.bind", "VSAMemory.unbind", "VSAMemory.similarity", "VSAMemory.register", "VSAMemory.query"]
+    },
+    {
+      "repo": "sunder",
+      "path": "sunder/agent.py",
+      "path_present": true,
+      "blob_sha": "ea8cfbe887c5359e1557c4c2078afad2d72e06a8",
+      "claimed_ops": ["scan", "snap", "sunder"],
+      "exact_def_present": [],
+      "exact_def_absent": ["scan", "snap", "sunder"],
+      "nearest_symbols": ["Agent.tool_scan", "Agent.tool_snap", "Agent.tool_sunder"]
+    },
+    {
+      "repo": "sunder",
+      "path": "sunder/gate.py",
+      "path_present": true,
+      "blob_sha": "a3bd5dac7b184dc0645223b9ffad02d7d50a98e6",
+      "claimed_ops": ["gate"],
+      "exact_def_present": [],
+      "exact_def_absent": ["gate"],
+      "nearest_symbols": ["ConstitutionalGate.execute"]
+    },
+    {
+      "repo": "sunder",
+      "path": "sunder/fork.py",
+      "path_present": true,
+      "blob_sha": "38abef3cc731501453499f731a0eb984c285ae29",
+      "claimed_ops": ["fork"],
+      "exact_def_present": [],
+      "exact_def_absent": ["fork"],
+      "nearest_symbols": ["VersionFork", "ForkManager.snap", "ForkManager.sunder"]
+    },
+    {
+      "repo": "sovereign-clean-room",
+      "path": "core/clean_room_vsa.py",
+      "path_present": true,
+      "blob_sha": "b086ae84d397415716b16cd9b36c2c15c624ad46",
+      "claimed_ops": ["bind", "unbind", "similarity"],
+      "exact_def_present": ["bind", "unbind", "similarity"],
+      "exact_def_absent": [],
+      "nearest_symbols": ["CleanRoomVSAEngine.bind", "CleanRoomVSAEngine.unbind", "CleanRoomVSAEngine.similarity"]
+    },
+    {
+      "repo": "SEEM-2.0-Self-Evolving-Emergent-Mind",
+      "path": "resonator_vsa.py",
+      "path_present": true,
+      "blob_sha": "fc89fa627cabe86ec9431d925f23d3927c7b1be8",
+      "claimed_ops": ["bind", "unbind", "similarity"],
+      "exact_def_present": ["bind", "unbind"],
+      "exact_def_absent": ["similarity"],
+      "nearest_symbols": ["bind", "unbind"]
+    },
+    {
+      "repo": "SEEM-2.0-Self-Evolving-Emergent-Mind",
+      "path": "banel.py",
+      "path_present": true,
+      "blob_sha": null,
+      "claimed_ops": ["banel"],
+      "exact_def_present": [],
+      "exact_def_absent": ["banel"],
+      "nearest_symbols": ["class BaNEL"]
+    },
+    {
+      "repo": "SEEM-2.0-Self-Evolving-Emergent-Mind",
+      "path": "seem.py",
+      "path_present": true,
+      "blob_sha": null,
+      "claimed_ops": ["cycle"],
+      "exact_def_present": [],
+      "exact_def_absent": ["cycle"],
+      "nearest_symbols": ["execute_mission", "cmd_dream"]
+    },
+    {
+      "repo": "SEEM-2.0-Self-Evolving-Emergent-Mind",
+      "path": "dream_phase.py",
+      "path_present": true,
+      "blob_sha": null,
+      "claimed_ops": ["dream"],
+      "exact_def_present": [],
+      "exact_def_absent": ["dream"],
+      "nearest_symbols": ["class DreamPhase"]
+    },
+    {
+      "repo": "sunder-cleanroom-vsa-adapter",
+      "path": "adapter/",
+      "path_present": true,
+      "blob_sha": null,
+      "claimed_ops": ["bind", "unbind", "similarity", "register", "query"],
+      "exact_def_present": [],
+      "exact_def_absent": ["bind", "unbind", "similarity", "register", "query"],
+      "nearest_symbols": ["adapter/engine.py summary", "directory present; ops not implemented as defs in engine.py"]
+    }
+  ]
+}
