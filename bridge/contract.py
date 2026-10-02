@@ -99,6 +99,7 @@ DISTINCT_IDENTITIES = (
 
 
 def shared_op_coverage() -> dict[str, list[str]]:
+    """Count claimed op strings on SURFACES. This is not an exact-def census."""
     out: dict[str, list[str]] = {op: [] for op in SHARED_OPS}
     for s in SURFACES:
         for op in SHARED_OPS:

@@ -1,8 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
 [project]
 name = "seem-sunder-bridge"
-version = "0.1.0"
-description = "Claim-capped SEEM/sunder/clean-room interop contract. No runtime agent claim."
+version = "0.1.1"
+description = "Claim-capped SEEM/sunder/clean-room interop contract. Not a runtime import and not a mind."
 requires-python = ">=3.11"
+readme = "README.md"
+license = { text = "MIT" }
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[tool.setuptools.packages.find]
+include = ["bridge*"]
+
+[tool.setuptools.package-data]
+bridge = ["*.json"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+pythonpath = ["."]
