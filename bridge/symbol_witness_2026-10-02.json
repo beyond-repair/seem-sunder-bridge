@@ -1,0 +1,264 @@
+{
+  "project": "seem-sunder-bridge",
+  "kind": "symbol_reread",
+  "observed_at": "2026-10-02",
+  "method": "default-branch raw file plus AST def/class names at the commits below; not a runtime import",
+  "claim": "Path presence and exact def-name presence stay different. Shared names are not an isomorphism. Default dimensions differ.",
+  "runtime_import": false,
+  "isomorphism": false,
+  "mind": false,
+  "commits": {
+    "sunder": "c7d4596c13b8aa0e672b40db94edc6655512b385",
+    "sovereign-clean-room": "4878918cf9f95d3c19e1890bef6d2fd6713e0a16",
+    "SEEM-2.0-Self-Evolving-Emergent-Mind": "2354210da84ab6a6389ae6108c3b889e028fd5da",
+    "sunder-cleanroom-vsa-adapter": "1a2832243ee99cb1f250b90147f641c4979f04a2"
+  },
+  "dims": {
+    "sunder": 4096,
+    "cleanroom": 8192,
+    "seem_resonator": 16384,
+    "equal": false
+  },
+  "rows": [
+    {
+      "repo": "sunder",
+      "path": "sunder/vsa.py",
+      "commit": "c7d4596c13b8aa0e672b40db94edc6655512b385",
+      "path_present": true,
+      "blob_sha": "584190696218d2ccf3146c4ecfd427f92a060980",
+      "blob_vs_2026-10-01": "unchanged",
+      "claimed_ops": [
+        "bind",
+        "unbind",
+        "similarity",
+        "register",
+        "query"
+      ],
+      "exact_def_present": [
+        "bind",
+        "unbind",
+        "similarity",
+        "register",
+        "query"
+      ],
+      "exact_def_absent": [],
+      "nearest_symbols": [
+        "VSAMemory.bind",
+        "VSAMemory.unbind",
+        "VSAMemory.similarity",
+        "VSAMemory.register",
+        "VSAMemory.query"
+      ],
+      "default_dim": 4096,
+      "notes": "Class VSAMemory. Same blob as the 2026-10-01 witness."
+    },
+    {
+      "repo": "sunder",
+      "path": "sunder/agent.py",
+      "commit": "c7d4596c13b8aa0e672b40db94edc6655512b385",
+      "path_present": true,
+      "blob_sha": "ef41ab54b1fdd59509630fc4fbdc8a977a4e1524",
+      "blob_vs_2026-10-01": "changed",
+      "claimed_ops": [
+        "scan",
+        "snap",
+        "sunder"
+      ],
+      "exact_def_present": [],
+      "exact_def_absent": [
+        "scan",
+        "snap",
+        "sunder"
+      ],
+      "nearest_symbols": [
+        "Agent.tool_scan",
+        "Agent.tool_snap",
+        "Agent.tool_sunder"
+      ],
+      "notes": "Blob changed. Exact def names scan/snap/sunder are still absent."
+    },
+    {
+      "repo": "sunder",
+      "path": "sunder/gate.py",
+      "commit": "c7d4596c13b8aa0e672b40db94edc6655512b385",
+      "path_present": true,
+      "blob_sha": "a3bd5dac7b184dc0645223b9ffad02d7d50a98e6",
+      "blob_vs_2026-10-01": "unchanged",
+      "claimed_ops": [
+        "gate"
+      ],
+      "exact_def_present": [],
+      "exact_def_absent": [
+        "gate"
+      ],
+      "nearest_symbols": [
+        "ConstitutionalGate.execute"
+      ],
+      "notes": "Same blob as the 2026-10-01 witness. No def named gate."
+    },
+    {
+      "repo": "sunder",
+      "path": "sunder/fork.py",
+      "commit": "c7d4596c13b8aa0e672b40db94edc6655512b385",
+      "path_present": true,
+      "blob_sha": "28d78bfc1762fb900fc8e3c02e323cd3f6989090",
+      "blob_vs_2026-10-01": "changed",
+      "claimed_ops": [
+        "fork"
+      ],
+      "exact_def_present": [],
+      "exact_def_absent": [
+        "fork"
+      ],
+      "nearest_symbols": [
+        "VersionFork",
+        "ForkManager.snap",
+        "ForkManager.sunder"
+      ],
+      "notes": "Blob changed. Still no def named fork."
+    },
+    {
+      "repo": "sovereign-clean-room",
+      "path": "core/clean_room_vsa.py",
+      "commit": "4878918cf9f95d3c19e1890bef6d2fd6713e0a16",
+      "path_present": true,
+      "blob_sha": "b086ae84d397415716b16cd9b36c2c15c624ad46",
+      "blob_vs_2026-10-01": "unchanged",
+      "claimed_ops": [
+        "bind",
+        "unbind",
+        "similarity"
+      ],
+      "exact_def_present": [
+        "bind",
+        "unbind",
+        "similarity"
+      ],
+      "exact_def_absent": [],
+      "nearest_symbols": [
+        "CleanRoomVSAEngine.bind",
+        "CleanRoomVSAEngine.unbind",
+        "CleanRoomVSAEngine.similarity"
+      ],
+      "default_dim": 8192,
+      "notes": "Same blob as the 2026-10-01 witness. register and query also exist on CleanRoomVSAEngine and are not claimed as shared here."
+    },
+    {
+      "repo": "SEEM-2.0-Self-Evolving-Emergent-Mind",
+      "path": "resonator_vsa.py",
+      "commit": "2354210da84ab6a6389ae6108c3b889e028fd5da",
+      "path_present": true,
+      "blob_sha": "20cdcc9f28d5dbba0b29e5d1dbdce700f744558c",
+      "blob_vs_2026-10-01": "changed",
+      "claimed_ops": [
+        "bind",
+        "unbind",
+        "similarity"
+      ],
+      "exact_def_present": [
+        "bind",
+        "unbind",
+        "similarity"
+      ],
+      "exact_def_absent": [],
+      "nearest_symbols": [
+        "ResonatorVSA.bind",
+        "ResonatorVSA.unbind",
+        "ResonatorVSA.similarity"
+      ],
+      "default_dim": 16384,
+      "notes": "similarity was exact_def_absent on 2026-10-01 and is an exact method on this commit. Dim 16384 is not 4096 or 8192. Not imported."
+    },
+    {
+      "repo": "SEEM-2.0-Self-Evolving-Emergent-Mind",
+      "path": "banel.py",
+      "commit": "2354210da84ab6a6389ae6108c3b889e028fd5da",
+      "path_present": true,
+      "blob_sha": "2fa37f095f148cc04c723dc53002244e24e20e26",
+      "blob_vs_2026-10-01": "hashed",
+      "claimed_ops": [
+        "banel"
+      ],
+      "exact_def_present": [],
+      "exact_def_absent": [
+        "banel"
+      ],
+      "nearest_symbols": [
+        "class BaNEL"
+      ],
+      "notes": "2026-10-01 blob_sha was null. Still no def named banel."
+    },
+    {
+      "repo": "SEEM-2.0-Self-Evolving-Emergent-Mind",
+      "path": "seem.py",
+      "commit": "2354210da84ab6a6389ae6108c3b889e028fd5da",
+      "path_present": true,
+      "blob_sha": "16ee336100c6cbbae9a03aaac8cd9ed130968e12",
+      "blob_vs_2026-10-01": "hashed",
+      "claimed_ops": [
+        "cycle"
+      ],
+      "exact_def_present": [],
+      "exact_def_absent": [
+        "cycle"
+      ],
+      "nearest_symbols": [
+        "execute_mission",
+        "cmd_dream"
+      ],
+      "notes": "2026-10-01 blob_sha was null. Still no def named cycle."
+    },
+    {
+      "repo": "SEEM-2.0-Self-Evolving-Emergent-Mind",
+      "path": "dream_phase.py",
+      "commit": "2354210da84ab6a6389ae6108c3b889e028fd5da",
+      "path_present": true,
+      "blob_sha": "22f0d0437d1666acd0611ace7fbd38d2c5253be8",
+      "blob_vs_2026-10-01": "hashed",
+      "claimed_ops": [
+        "dream"
+      ],
+      "exact_def_present": [],
+      "exact_def_absent": [
+        "dream"
+      ],
+      "nearest_symbols": [
+        "class DreamPhase",
+        "DreamPhase.micro_dream",
+        "DreamPhase.batch_dream"
+      ],
+      "notes": "2026-10-01 blob_sha was null. Still no def named dream."
+    },
+    {
+      "repo": "sunder-cleanroom-vsa-adapter",
+      "path": "adapter/",
+      "commit": "1a2832243ee99cb1f250b90147f641c4979f04a2",
+      "path_present": true,
+      "blob_sha": null,
+      "blob_vs_2026-10-01": "directory",
+      "claimed_ops": [
+        "bind",
+        "unbind",
+        "similarity",
+        "register",
+        "query"
+      ],
+      "exact_def_present": [],
+      "exact_def_absent": [
+        "bind",
+        "unbind",
+        "similarity",
+        "register",
+        "query"
+      ],
+      "nearest_symbols": [
+        "adapter contract table",
+        "NAME_ONLY bind/unbind/similarity",
+        "UNMAPPED register/query"
+      ],
+      "algebra": "NAME_ONLY",
+      "register_query": "UNMAPPED",
+      "notes": "No function def in adapter/ uses those five names. bind/unbind/similarity are NAME_ONLY. register and query stay unmapped. Dims recorded there are 4096 vs 8192."
+    }
+  ]
+}
