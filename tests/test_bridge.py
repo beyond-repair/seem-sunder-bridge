@@ -8,6 +8,7 @@ from bridge.contract import (
     claims_ok,
     shared_op_coverage,
 )
+from bridge.check import LOCAL_DEF_BAN, local_def_names
 from bridge.engine import report
 
 
@@ -42,3 +43,7 @@ def test_report_does_not_claim_runtime():
     text = report()
     assert "NOT_CLAIMED" in text
     assert "runtime_interop=NOT_CLAIMED" in text
+
+
+def test_local_defs_do_not_implement_foreign_ops():
+    assert LOCAL_DEF_BAN.isdisjoint(local_def_names())

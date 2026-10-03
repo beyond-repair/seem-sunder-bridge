@@ -59,6 +59,8 @@ No configuration file. The checker does not use the network.
 
 `requirements.txt` only pins pytest for the existing workflow, which installs that file and runs pytest from the repository root. The install above is the supported path.
 
+CI installs `requirements.txt`, runs `python -m pytest -q`, then runs `python -m bridge`. A bridge exit other than 0 fails the job. The checker still does not import sunder, SEEM, or clean-room.
+
 ## Related
 
 - `adl-capability-matrix` Q-003
